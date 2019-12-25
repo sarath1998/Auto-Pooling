@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/formsbkg"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="Travelling Details"
+                android:textAllCaps="true"
+                android:textColor="@color/colorNavyBlue"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/txtsource"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="Source"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtdestination"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="Destination" />
+
+
+            <EditText
+                android:id="@+id/txtmobile"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:hint="Mobile No, Do not include +91"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/txttime"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Date"
+                android:textIsSelectable="true" />
+
+            <EditText
+                android:id="@+id/txtslot"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="SLOT" />
+
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Submit"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Or"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btngotosearch"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
+                android:text="Search Passengers"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" " />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

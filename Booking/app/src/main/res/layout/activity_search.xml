@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/formsbkg"
+    tools:context=".Search">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="Search Passengers"
+                android:textAllCaps="true"
+                android:textColor="@color/colorNavyBlue"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittextsrc"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Source" />
+
+            <EditText
+                android:id="@+id/edittextdest"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Enter Destination" />
+
+            <EditText
+                android:id="@+id/edittextdate"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Choose Date" />
+
+            <Button
+                android:id="@+id/btnsearch"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="20dp"
+                android:text="search"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Or"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnpost"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Post"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

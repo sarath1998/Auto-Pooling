@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Afterlogin"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnpostjourneys"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rideshare"
+            android:tooltipText="PostJourneys" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PostJourneys"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@color/colorPrimary"
+            android:textSize="15sp"/>
+
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnchangepass"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/updateprofile"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:tooltipText="Change Password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@color/colorPrimary"
+            android:textSize="15sp"/>
+
+    <ImageButton
+        android:id="@+id/btnsearchpassengers"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search"
+        android:tooltipText="Search Passengers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Passengers"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@color/colorPrimary"
+            android:textSize="15sp"/>
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnlogout"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logout"
+        android:scaleType="fitCenter"
+        android:tooltipText="Logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@color/colorPrimary"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
